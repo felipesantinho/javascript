@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: rgba(1, 235, 236, 0.4);
+      margin-bottom: 50px;
+    }
+    span {
+      margin-left: 10px;
+    }
+    h1 {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Somando Valores</h1>
+  <input type="number" name="numero1" id="numero1"> <br> + <br>
+  <input type="number" name="numero2" id="numero2"> <br> <br>
+  <input type="button" value="Somar" onclick="somar()">
+  <span id="resultado1"></span>
+  <script>
+    function somar(){
+      var n1 = window.document.getElementById('numero1')
+      var n2 = window.document.getElementById('numero2')
+      var res = window.document.getElementById('resultado1')
+      var n1 = Number(n1.value)
+      var n2 = Number(n2.value)
+      var s = n1 + n2
+      res.innerHTML = `<strong>Resultado:</strong> ${s}`
+    }
+  </script>
+  <h1>Diminuindo Valores</h1>
+  <input type="number" name="numero3" id="numero3"> <br> - <br>
+  <input type="number" name="numero4" id="numero4"> <br> <br>
+  <input type="button" value="Diminuir" onclick="diminuir()">
+  <span id="resultado2"></span>
+  <script>
+    function diminuir(){
+      var n3 = window.document.getElementById('numero3') 
+      var n4 = window.document.getElementById('numero4')
+      var res = window.document.getElementById('resultado2')
+      var n3 = Number(n3.value)
+      var n4 = Number(n4.value)
+      var d = n3 - n4
+      res.innerHTML = `<strong>Resultado:</strong> ${d}`
+    }
+  </script>
+  <h1>Multiplicando Valores</h1>
+  <input type="number" name="numero5" id="numero5"> <br> x <br>
+  <input type="number" name="numero6" id="numero6"> <br> <br>
+  <input type="button" value="Multiplicar" onclick="multiplicar()">
+  <span id="resultado3"></span>
+  <script>
+    function multiplicar(){
+      var n5 = window.document.getElementById('numero5')
+      var n6 = window.document.getElementById('numero6')
+      var res = window.document.getElementById('resultado3')
+      var n5 = Number(n5.value)
+      var n6 = Number(n6.value)
+      var m = n5 * n6
+      res.innerHTML = `<strong>Resultado:</strong> ${m}`
+    }
+  </script>
+  <h1>Dividindo Valores</h1>
+    <input type="number" name="numero7" id="numero7"> <br> / <br>
+    <input type="number" name="numero8" id="numero8"> <br> <br>
+    <input type="button" value="Dividir" onclick="dividir()">
+    <span id="resultado4"></span>
+    <script>
+      function dividir(){
+        var n7 = window.document.getElementById('numero7')
+        var n8 = window.document.getElementById('numero8')
+        var res = window.document.getElementById('resultado4')
+        var n7 = Number(n7.value)
+        var n8 = Number(n8.value)
+        var div = n7/n8
+        res.innerHTML = `<strong>Resultado:</strong> ${div}`
+      }
+    </script>
+</body>
+</html>
