@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contagem</h1>
+  <p>Escreva um número para iniciar a contagem:</p>
+  <input type="number" name="inicio" id="inicio">
+  <p>Escreva um número para terminar a contagem:</p>
+  <input type="number" name="fim" id="fim"> <br>
+  <p>Escreva um número para ser o incremento:</p>
+  <input type="number" name="incremento" id="incremento"> <br> <br>
+  <input type="button" value="Calcular" onclick="contagem()">
+  <div id="res"></div>
+  <script>
+    function contagem(){
+      var inicio = window.document.querySelector('input#inicio')
+      var fim = window.document.querySelector('input#fim')
+      var incremento = window.document.querySelector('input#incremento')
+      var res = window.document.querySelector('div#res')
+      var inicio = Number(inicio.value)
+      var fim = Number(fim.value)
+      var incremento = Number(incremento.value)
+      res.innerHTML = `<br> ${inicio} <br>`
+      for(inicio; inicio <= fim && (inicio + incremento) <= fim; incremento){
+        inicio = inicio + incremento
+        res.innerHTML += inicio + '<br>'
+      }
+    }
+  </script>
+</body>
+</html>
