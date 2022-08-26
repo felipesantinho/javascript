@@ -9,7 +9,7 @@
     body {
       text-align: center;
       background-color: rgba(1, 235, 236, 0.4);
-      margin-bottom: 50px;
+      margin-bottom: 10px;
     }
     span {
       margin-left: 10px;
@@ -17,10 +17,13 @@
     h1 {
       margin-top: 50px;
     }
+    p {
+      margin-top: 100px;
+    }
   </style>
 </head>
 <body>
-  <h1>Somando Valores</h1>
+  <h1>Somando</h1>
   <input type="number" name="numero1" id="numero1"> <br> + <br>
   <input type="number" name="numero2" id="numero2"> <br> <br>
   <input type="button" value="Somar" onclick="somar()">
@@ -36,7 +39,7 @@
       res.innerHTML = `<strong>Resultado:</strong> ${s}`
     }
   </script>
-  <h1>Diminuindo Valores</h1>
+  <h1>Diminuindo</h1>
   <input type="number" name="numero3" id="numero3"> <br> - <br>
   <input type="number" name="numero4" id="numero4"> <br> <br>
   <input type="button" value="Diminuir" onclick="diminuir()">
@@ -52,7 +55,7 @@
       res.innerHTML = `<strong>Resultado:</strong> ${d}`
     }
   </script>
-  <h1>Multiplicando Valores</h1>
+  <h1>Multiplicando</h1>
   <input type="number" name="numero5" id="numero5"> <br> x <br>
   <input type="number" name="numero6" id="numero6"> <br> <br>
   <input type="button" value="Multiplicar" onclick="multiplicar()">
@@ -68,7 +71,7 @@
       res.innerHTML = `<strong>Resultado:</strong> ${m}`
     }
   </script>
-  <h1>Dividindo Valores</h1>
+  <h1>Dividindo</h1>
     <input type="number" name="numero7" id="numero7"> <br> / <br>
     <input type="number" name="numero8" id="numero8"> <br> <br>
     <input type="button" value="Dividir" onclick="dividir()">
@@ -84,5 +87,6 @@
         res.innerHTML = `<strong>Resultado:</strong> ${div}`
       }
     </script>
+    <p>Desenvolvido por Felipe Santinho</p>
 </body>
 </html>
