@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p><strong>Quantos quartos possui sua residência:</strong></p>
+  <input type="number" name="quartos" id="quartos"> <br> <br>
+  <input type="button" value="Calcular" onclick="calcular()">
+  <br> <br> 
+  <div id="res"></div>
+  <script>
+    function calcular(){
+    var numq = window.document.querySelector('input#quartos')
+    var res = window.document.querySelector('div#res')
+    var numq = Number(numq.value)
+    switch (numq){
+      case 0:
+        res.innerHTML = 'Você não possui um imóvel!'
+        break
+      case 1:
+        res.innerHTML = 'Você possui um imóvel pequeno!'
+        break
+      case 2:
+        res.innerHTML = 'Você possui um imóvel aconchegante!'
+        break
+      case 3:
+        res.innerHTML = 'Você possui um imóvel grande!'
+        break
+      case 4:
+        res.innerHTML = 'Você possui uma mansão!'
+        break
+      case 5:
+        res.innerHTML = 'Você mora em um palácio!'
+        break
+      default:
+        res.innerHTML = 'Valor não compatível ou imóvel fora dos padrões!'
+        break
+    }
+    }
+  </script>
+</body>
+</html>
