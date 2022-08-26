@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p><strong>Qual sua velocidade média na esteira:</strong></p>
+  <input type="number" name="vel" id="vel"> <br> (em km/h) <br> <br>
+  <input type="button" value="Calcular Desempenho" onclick="calcular()">
+  <br>
+  <br>
+  <div id="res"></div>
+  <script>
+    function calcular(){
+      var vel = window.document.querySelector('input#vel')
+      var res = window.document.querySelector('div#res')
+      var vel = Number(vel.value)
+      if (vel >= 12){
+        res.innerHTML = `<strong>Você está acima da média dos corredores cadastrados!</strong>`
+      } else if (vel >= 10){
+        res.innerHTML = `<strong>Você está no caminho certo, falta pouco para atingir a média dos corredores cadastrados!</strong>`
+      } else {
+        res.innerHTML = `<strong>Você está abaixo da média dos corredores cadastrados!</strong>`
+      }
+    }
+  </script>
+</body>
+</html>
