@@ -167,19 +167,19 @@
             <br>
             <select name="nome2pratosegunda" id="nome2pratosegunda">
               <option value="">Selecione</option>
-              <option value="">Almôndegas</option>
-              <option value="">Costela Suína</option>
-              <option value="">Espetinho</option>
-              <option value="">Feijoada</option>
-              <option value="">Frango à Milanesa</option>
-              <option value="">Frango Ensopado</option>
-              <option value="">Frango Frito</option>
-              <option value="">Iscas de Frango</option>
-              <option value="">Iscas de Peixe</option>
-              <option value="">Lasanha</option>
-              <option value="">Quiche de Camarão</option>
-              <option value="">Saladão</option>
-              <option value="">Outro Prato</option>
+              <option value="Almôndegas" id="almondegas.2.segunda">Almôndegas</option>
+              <option value="Costela Suína" id="costelasuina.2.segunda">Costela Suína</option>
+              <option value="Espetinho" id="espetinho.2.segunda">Espetinho</option>
+              <option value="Feijoada" id="feijoada.2.segunda">Feijoada</option>
+              <option value="Frango à Milanesa" id="frangoamilanesa.2.segunda">Frango à Milanesa</option>
+              <option value="Frango Ensopado" id="frangoensopado.2.segunda">Frango Ensopado</option>
+              <option value="Frango Frito" id="frangofrito.2.segunda">Frango Frito</option>
+              <option value="Iscas de Frango" id="iscasdefrango.2.segunda">Iscas de Frango</option>
+              <option value="Iscas de Peixe" id="iscasdepeixe.2.segunda">Iscas de Peixe</option>
+              <option value="Lasanha" id="lasanha.2.segunda">Lasanha</option>
+              <option value="Quiche de Camarão" id="quichedecamarao.2.segunda">Quiche de Camarão</option>
+              <option value="Saladão" id="saladao.2.segunda">Saladão</option>
+              <option value="Outro Prato" id="outroprato.2.segunda">Outro Prato</option>
             </select>
             <br>
           </p>
@@ -575,6 +575,48 @@
       }
       if (nome1pratosegunda.options[nome1pratosegunda.selectedIndex].value == "Outro Prato"){
         escrever.innerHTML = '<p style="text-align:center;"> [x1] Outro Prato (seg)</p>'
+      }
+
+      var nome2pratosegunda = window.document.getElementById('nome2pratosegunda')
+
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Almôndegas"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Almôndegas (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Costela Suína"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Costela Suína (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Espetinho"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Espetinho (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Feijoada"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Feijoada (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Frango à Milanesa"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Frango à Milanesa (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Frango Ensopado"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Frango Ensopado (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Frango Frito"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Frango Frito (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Iscas de Frango"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Iscas de Frango (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Iscas de Peixe"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Iscas de Peixe (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Lasanha"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Lasanha (seg)</p>'
+      }
+      if (nome2pratosegunda.options[nome2pratosegunda.selectedIndex].value == "Quiche de Camarão"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Quiche de Camarão (seg)</p>'
+      }
+      if (nome1pratosegunda.options[nome1pratosegunda.selectedIndex].value == "Saladão"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Saladão (seg)</p>'
+      }
+      if (nome1pratosegunda.options[nome1pratosegunda.selectedIndex].value == "Outro Prato"){
+        escrever.innerHTML += '<p style="text-align:center;"> [x1] Outro Prato (seg)</p>'
       }
     }
   </script>
