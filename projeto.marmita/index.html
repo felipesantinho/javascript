@@ -513,18 +513,29 @@
     </section>
     <section>
       <article id="botao">
-        <input type="button" value="CALCULAR" name="botao" id="ibotao">
+        <input type="button" value="CALCULAR" name="botao" id="ibotao" onclick="calcular()">
       </article>
     </section>
     <section id="recibo">
       <article id="recibo">
-        <p><strong>RECIBO</strong></p>
+        <p>
+          <strong>RECIBO</strong>
+        </p>
         <hr>
+      </article>
+      <article id="contas">
+
       </article>
     </section>
   </main>
   <footer>
     <p>Desenvolvido por <strong>Felipe Augusto Santinho</strong></p>
   </footer>
+  <script>
+    function calcular(){
+      var escrever = window.document.querySelector('article#contas') 
+      escrever.innerHTML = ''
+    }
+  </script>
 </body>
 </html>
