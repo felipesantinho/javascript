@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Consumo de Refeições</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
     * {
       margin: 0px;
     }
@@ -17,19 +18,28 @@
 
     header {
       background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
 
     main {
       background-image: url('fundo.jpg');
       height: 1000px;
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     footer {
       background-color: black;
     }
 
-    p {
+    p#cabeçalho {
+      color: white;
+      font-family: 'Aboreto', cursive;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    p#rodape {
       color: white;
       font-size: 12px;
       font-family: Arial, Helvetica, sans-serif;
@@ -41,13 +51,13 @@
 </head>
 <body>
   <header>
-    <p>Marmitas</p>
+    <p id="cabeçalho">~ Marmitas ~</p>
   </header>
   <main>
 
   </main>
   <footer>
-    <p>Desenvolvido por Felipe Augusto Santinho</p>
+    <p id="rodape">Desenvolvido por Felipe Augusto Santinho</p>
   </footer>
 </body>
 </html>
