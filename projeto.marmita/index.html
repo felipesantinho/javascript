@@ -37,7 +37,7 @@
       margin-bottom: 20px;
     }
 
-    article {
+    article#geral {
       padding: 15px 20px 15px 20px;
       margin: auto;
       background-color: white;
@@ -47,6 +47,10 @@
       border-radius: 20px;
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.648);
       color: black;
+    }
+
+    article#botao {
+      text-align: center;
     }
 
     form {
@@ -59,6 +63,20 @@
       font-family: 'Aboreto', cursive;
       font-size: 16px;
       text-align: center;
+    }
+
+    input#ibotao{
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.648);
+      font-family: 'Aboreto', cursive;
+      font-weight: bolder;
+    }
+
+    input#ibotao:hover {
+      background-color: black;
+      color: white;
     }
 
     footer {
@@ -80,7 +98,7 @@
   </header>
   <main>
     <section>
-      <article>
+      <article id="geral">
         <p id="mini-titulo"><strong>&#x1F35B;&nbsp; SEGUNDA-FEIRA &nbsp;&#x1F35B;</strong></p>
         <hr>
         <br>
@@ -108,27 +126,120 @@
       </article>
     </section>
     <section>
-      <article>
+      <article id="geral">
         <p id="mini-titulo"><strong>&#x1F957;&nbsp; TERÇA-FEIRA &nbsp;&#x1F957;</strong></p>
         <hr>
+        <br>
+        <form action="" autocomplete="off">
+          <p>
+            <label for="irefeicao1ter"><strong>Nome do 1º Prato:</strong></label>
+            <input type="text" name="refeicao1ter" id="irefeicao1ter">
+          </p>
+          <p>
+            <label for="iprecorefeicao1ter"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao1ter" id="iprecorefeicao1ter" min="16" max="30">
+          </p>
+          <br>
+          <p>
+            <label for="irefeicao2ter"><strong>Nome do 2º Prato:</strong></label>
+            <input type="text" name="refeicao2ter" id="irefeicao2ter">
+          </p>
+          <p>
+            <label for="iprecorefeicao2ter"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao2ter" id="iprecorefeicao2ter" min="16" max="30">
+          </p>
+        </form>
       </article>
     </section>
     <section>
-      <article>
+      <article id="geral">
         <p id="mini-titulo"><strong>&#x1F969;&nbsp; QUARTA-FEIRA &nbsp;&#x1F969;</strong></p>
         <hr>
+        <br>
+        <form action="" autocomplete="off">
+          <p>
+            <label for="irefeicao1qua"><strong>Nome do 1º Prato:</strong></label>
+            <input type="text" name="refeicao1qua" id="irefeicao1qua">
+          </p>
+          <p>
+            <label for="iprecorefeicao1qua"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao1qua" id="iprecorefeicao1qua" min="16" max="30">
+          </p>
+          <br>
+          <p>
+            <label for="irefeicao2qua"><strong>Nome do 2º Prato:</strong></label>
+            <input type="text" name="refeicao2qua" id="irefeicao2qua">
+          </p>
+          <p>
+            <label for="iprecorefeicao2qua"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao2qua" id="iprecorefeicao2qua" min="16" max="30">
+          </p>
+        </form>
       </article>
     </section>
     <section>
-      <article>
+      <article id="geral">
         <p id="mini-titulo"><strong>&#x1F372;&nbsp; QUINTA-FEIRA &nbsp;&#x1F372;</strong></p>
         <hr>
+        <br>
+        <form action="" autocomplete="off">
+          <p>
+            <label for="irefeicao1qui"><strong>Nome do 1º Prato:</strong></label>
+            <input type="text" name="refeicao1qui" id="irefeicao1qui">
+          </p>
+          <p>
+            <label for="iprecorefeicao1qui"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao1qui" id="iprecorefeicao1qui" min="16" max="30">
+          </p>
+          <br>
+          <p>
+            <label for="irefeicao2qui"><strong>Nome do 2º Prato:</strong></label>
+            <input type="text" name="refeicao2qui" id="irefeicao2qui">
+          </p>
+          <p>
+            <label for="iprecorefeicao2qui"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao2qui" id="iprecorefeicao2qui" min="16" max="30">
+          </p>
+        </form>
       </article>
     </section>
     <section>
-      <article>
+      <article id="geral">
         <p id="mini-titulo"><strong>&#x1F364;&nbsp; SEXTA-FEIRA &nbsp;&#x1F364;</strong></p>
         <hr>
+        <br>
+        <form action="" autocomplete="off">
+          <p>
+            <label for="irefeicao1sex"><strong>Nome do 1º Prato:</strong></label>
+            <input type="text" name="refeicao1sex" id="irefeicao1sex">
+          </p>
+          <p>
+            <label for="iprecorefeicao1sex"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao1sex" id="iprecorefeicao1sex" min="16" max="30">
+          </p>
+          <br>
+          <p>
+            <label for="irefeicao2sex"><strong>Nome do 2º Prato:</strong></label>
+            <input type="text" name="refeicao2sex" id="irefeicao2sex">
+          </p>
+          <p>
+            <label for="iprecorefeicao2sex"><strong>Preço:</strong></label>
+            <br>
+            <input type="number" name="precorefeicao2sex" id="iprecorefeicao2sex" min="16" max="30">
+          </p>
+        </form>
+      </article>
+    </section>
+    <section>
+      <article id="botao">
+        <input type="button" value="CALCULAR" name="botao" id="ibotao">
       </article>
     </section>
   </main>
