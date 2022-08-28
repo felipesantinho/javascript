@@ -27,7 +27,7 @@
     main {
       padding-top: 70px;
       padding-bottom: 70px;
-      height: 2500px;
+      height: 2700px;
       background-image: url('imagens/fundo-principal.jpg');
       background-position: center;
       }
@@ -41,7 +41,7 @@
       padding: 15px 20px 15px 20px;
       margin: auto;
       background-color: #FDF5AB;
-      height: 500px;
+      height: 550px;
       width: 250px;
       border: 2px solid black;
       border-radius: 20px;
@@ -89,7 +89,7 @@
     }
 
     input#ibotao{
-      margin-bottom: 30px;
+      margin-bottom: 70px;
       height: 40px;
       width: 110px;
       border-radius: 30px;
@@ -99,6 +99,21 @@
     }
 
     input#ibotao:hover {
+      background-color: black;
+      color: white;
+    }
+
+    input#ibotao2{
+      margin-bottom: 70px;
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.648);
+      font-family: 'Aboreto', cursive;
+      font-weight: bolder;
+    }
+
+    input#ibotao2:hover {
       background-color: black;
       color: white;
     }
@@ -514,6 +529,7 @@
     <section>
       <article id="botao">
         <input type="button" value="CALCULAR" name="botao" id="ibotao" onclick="calcular()">
+        <input type="button" value="LIMPAR" name="botao2" id="ibotao2" onclick="limpar()">
       </article>
     </section>
     <section id="recibo">
@@ -1157,10 +1173,15 @@
 
       tot = seg1 + seg2 + ter1 + ter2 + qua1 + qua2 + qui1 + qui2 + sex1 + sex2
 
-      escrever.innerHTML += `<hr><p style="text-align:center; font-size: 14px; font-family: 'Aboreto', cursive; ">O total da semana foi de:<strong><br><br>RS${tot},00</strong></p>`
+      escrever.innerHTML += `<br><br><hr><p style="text-align:center; font-size: 14px; font-family: 'Aboreto', cursive; color: white; background-color: black; border-radius: 20px; padding-top: 10px; padding-bottom: 10px;">O total da semana foi de:<strong><br><br>RS${tot},00</strong></p>`
 
     }
   </script>
-  
+  <script>
+    var rer = window.document.getElementById('ibotao2')
+    rer.addEventListener("click", function(){
+      location.reload();
+    })
+  </script>
 </body>
 </html>
