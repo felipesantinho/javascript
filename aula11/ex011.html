@@ -15,8 +15,8 @@
   </div>
   <script>
     function calcular(){
-      typeof pais == "string"  
       var pais = window.document.getElementById('pais')
+      var pais = String(pais.value) 
       var res = window.document.getElementById('res')
       if (pais == 'Brasil') {
         res.innerHTML = '<p>Você é <strong>Brasileiro!</strong></p>'
