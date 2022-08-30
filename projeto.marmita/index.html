@@ -159,8 +159,8 @@
         <hr>
         <br>
         <form action="" autocomplete="off">
-          <label for=""></label>
-          <input type="text" size="25" id="nome" placeholder="escreva o nome do cliente" required>
+          <label for="nome"></label>
+          <input type="text" size="25" name="nome" id="nome" placeholder="escreva o nome do cliente" required>
         </form>
       </article>
       <article id="geral">
@@ -577,6 +577,10 @@
     function calcular(){
       var escrever = window.document.querySelector('article#contas')
       
+      var nomecliente = window.document.getElementById('nome')
+      var nomecliente = nomecliente.value
+      escrever.innerHTML = `<p style="text-align:center;"> ${nomecliente} </p>`     
+
       var nome1pratosegunda = window.document.getElementById('nome1pratosegunda')
       
       if (nome1pratosegunda.options[nome1pratosegunda.selectedIndex].value == "Almôndegas"){
