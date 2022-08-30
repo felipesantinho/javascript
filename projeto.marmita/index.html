@@ -27,7 +27,7 @@
     main {
       padding-top: 70px;
       padding-bottom: 70px;
-      height: 2700px;
+      height: 2900px;
       background-image: url('imagens/fundo-principal.jpg');
       background-position: center;
       }
@@ -42,6 +42,19 @@
       margin: auto;
       background-color: #FDF5AB;
       height: 550px;
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.648);
+      color: black;
+    }
+
+    article#cliente {
+      padding: 15px 20px 15px 20px;
+      margin: auto;
+      margin-bottom: 20px;
+      background-color: white;
+      height: 140px;
       width: 250px;
       border: 2px solid black;
       border-radius: 20px;
@@ -86,6 +99,10 @@
     select {
       text-align: center;
       margin-top: 3px;
+    }
+
+    input#nome{
+      text-align: center;
     }
 
     input#ibotao{
@@ -137,6 +154,15 @@
   </header>
   <main>
     <section>
+      <article id="cliente">
+        <p id="mini-titulo"><strong>&#x1F9D4;&nbsp; CLIENTE &nbsp;&#x1F468;</strong></p>
+        <hr>
+        <br>
+        <form action="" autocomplete="off">
+          <label for=""></label>
+          <input type="text" size="30" id="nome" required>
+        </form>
+      </article>
       <article id="geral">
         <p id="mini-titulo"><strong>&#x1F35B;&nbsp; SEGUNDA-FEIRA &nbsp;&#x1F35B;</strong></p>
         <hr>
