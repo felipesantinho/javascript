@@ -7,4 +7,4 @@
  
  - [x] Exercícios
  - [X] Extras
- - [X] Projeto Marmitas
+ - [X] Projeto Marmita
